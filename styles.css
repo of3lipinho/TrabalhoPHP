@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    overflow-x: hidden; /* Para evitar rolagem horizontal */
+}
+
+.cabecalho_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    padding: 20px;
+    width: 100%; /* Certifique-se de que o cabeçalho ocupa 100% da largura */
+    box-sizing: border-box; /* Inclui padding na largura total */
+}
+
+.cabecalho {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.menu_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    padding: 10px 0;
+    width: 100%;
+    box-sizing: border-box; /* Inclui padding na largura total */
+}
+
+.menu {
+    display: flex;
+}
+
+.menu a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 15px; /* Ajuste o padding */
+}
+
+.banner_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 100%; /* Garante que o container ocupe 100% da largura */
+    overflow: hidden; /* Para evitar que a imagem saia do container */
+}
+
+.img {
+    max-width: 100%; /* Garante que a imagem nunca ultrapasse 100% da largura do elemento pai */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .menu a {
+        font-size: 14px;
+        padding: 8px; /* Ajusta o padding */
+    }
+
+    .cabecalho {
+        font-size: 20px; /* Ajuste o tamanho da fonte do cabeçalho */
+    }
+}
