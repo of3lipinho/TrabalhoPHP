@@ -22,7 +22,7 @@ body {
 
 .menu_container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background-color: red;
     padding: 10px 0;
@@ -38,7 +38,20 @@ body {
     color: white;
     font-size: 18px;
     text-decoration: none;
-    padding: 10px 15px; /* Ajuste o padding */
+    margin-left: 115px;
+    margin-right: 115px;
+}
+.menu select {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    margin-left: 115px;
+    margin-right: 115px;
+    background-color: transparent;
+    border: none;
+}
+.opcao{
+    background-color: gray;
 }
 
 .banner_container {
@@ -54,15 +67,6 @@ body {
     max-width: 100%; /* Garante que a imagem nunca ultrapasse 100% da largura do elemento pai */
     height: auto; /* Mantém a proporção da imagem */
 }
-
-/* Responsividade */
-@media (max-width: 600px) {
-    .menu a {
-        font-size: 14px;
-        padding: 8px; /* Ajusta o padding */
-    }
-
-    .cabecalho {
-        font-size: 20px; /* Ajuste o tamanho da fonte do cabeçalho */
-    }
+option {
+    background-color: gray;
 }
