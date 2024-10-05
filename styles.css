@@ -1,72 +1,94 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    overflow-x: hidden; /* Para evitar rolagem horizontal */
+    font-family: Arial, Helvetica, sans-serif; 
+    margin: 0; 
+    overflow-x: hidden; 
+    background-color: rgb(165, 165, 165); 
 }
 
 .cabecalho_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: blue;
-    padding: 20px;
-    width: 100%; /* Certifique-se de que o cabeçalho ocupa 100% da largura */
-    box-sizing: border-box; /* Inclui padding na largura total */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: blue; 
+    padding: 10px; 
+    width: 100%; 
+    box-sizing: border-box; 
 }
 
 .cabecalho {
-    color: white;
-    font-size: 25px;
-    font-weight: bold;
+    color: white; 
+    font-size: 25px; 
+    font-weight: bold; 
 }
 
 .menu_container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: red;
-    padding: 10px 0;
-    width: 100%;
-    box-sizing: border-box; /* Inclui padding na largura total */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: rgb(116, 116, 116); 
+    height: 90px; 
+    box-sizing: border-box; 
 }
 
 .menu {
-    display: flex;
+    display: flex; 
+    justify-content: center; 
+    width: 100%; 
 }
 
 .menu a {
-    color: white;
-    font-size: 18px;
-    text-decoration: none;
-    margin-left: 115px;
-    margin-right: 115px;
+    color: white; 
+    font-size: 18px; 
+    text-decoration: none; 
+    padding: 15px 30px; 
 }
-.menu select {
-    color: white;
-    font-size: 18px;
-    text-decoration: none;
-    margin-left: 115px;
-    margin-right: 115px;
-    background-color: transparent;
-    border: none;
-}
-.opcao{
-    background-color: gray;
+
+
+.menu a:hover {
+    background-color: rgba(255, 255, 255, 0.144);
 }
 
 .banner_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 250px;
-    width: 100%; /* Garante que o container ocupe 100% da largura */
-    overflow: hidden; /* Para evitar que a imagem saia do container */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 250px; 
+    width: 100%; 
+    overflow: hidden; 
+    margin: 0; 
 }
 
-.img {
-    max-width: 100%; /* Garante que a imagem nunca ultrapasse 100% da largura do elemento pai */
-    height: auto; /* Mantém a proporção da imagem */
+.banner {
+    max-width: 100%; 
+    height: auto; 
 }
-option {
-    background-color: gray;
+
+.imagem_container {
+    display: flex; /* Certifique-se de que o container é flexível */
+    justify-content: space-around; /* Distribui os itens com espaço igual entre eles */
+    margin: 20px 0; /* Adiciona um espaçamento superior e inferior */
+}
+
+.imagem_container img {
+    max-width: 25%; /* A largura máxima das imagens, ajustável conforme necessário */
+    height: auto; /* Mantém a proporção das imagens */
+    margin: 5px; /* Adiciona margens em torno das imagens */
+}
+
+.cadastro {
+    background-color: purple; 
+}
+
+.consulta {
+    background-color: magenta; 
+}
+
+.cadastro1 {
+    background-color: purple; 
+    border-right: 0.5px solid white; 
+}
+
+.consulta1 {
+    background-color: magenta; 
+    border-right: 0.5px solid white; 
 }
