@@ -42,6 +42,13 @@ body {
     text-decoration: none; 
     padding: 15px 30px; 
 }
+.menu_botao_borda{
+    background-color:  #627082;
+    border-right: white 1px solid;
+ }
+ .menu_botao{
+     background-color: #627082;
+ }
 
 
 .menu a:hover {
@@ -69,16 +76,18 @@ body {
     margin: 20px 0; /* Adiciona um espaçamento superior e inferior */
 }
 
-.imagem_container img {
-    max-width: 25%; /* A largura máxima das imagens, ajustável conforme necessário */
-    height: auto; /* Mantém a proporção das imagens */
-    margin: 5px; /* Adiciona margens em torno das imagens */
+.imagem_subcontainer img {
+    max-width: 100%; /* A largura máxima das imagens, ajustável conforme necessário */
+    height: 100%; /* Mantém a proporção das imagens */
 }
 
-.menu_botao_borda{
-   background-color:  #627082;
-   border-right: white 1px solid;
-}
-.menu_botao{
-    background-color: #627082;
+
+.imagem_subcontainer{
+    border: black 1px solid;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    overflow: hidden;
 }
