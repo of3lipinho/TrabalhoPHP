@@ -2,14 +2,14 @@ body {
     font-family: Arial, Helvetica, sans-serif; 
     margin: 0; 
     overflow-x: hidden; 
-    background-color: rgb(165, 165, 165); 
+    background-color: #d6d6d6; 
 }
 
 .cabecalho_container {
     display: flex; 
     justify-content: center; 
     align-items: center; 
-    background-color: blue; 
+    background-color: #454545; 
     padding: 10px; 
     width: 100%; 
     box-sizing: border-box; 
@@ -25,7 +25,7 @@ body {
     display: flex; 
     justify-content: center; 
     align-items: center; 
-    background-color: rgb(116, 116, 116); 
+    background-color: #a6a6a6; 
     height: 90px; 
     box-sizing: border-box; 
 }
@@ -75,20 +75,10 @@ body {
     margin: 5px; /* Adiciona margens em torno das imagens */
 }
 
-.cadastro {
-    background-color: purple; 
+.menu_botao_borda{
+   background-color:  #627082;
+   border-right: white 1px solid;
 }
-
-.consulta {
-    background-color: magenta; 
-}
-
-.cadastro1 {
-    background-color: purple; 
-    border-right: 0.5px solid white; 
-}
-
-.consulta1 {
-    background-color: magenta; 
-    border-right: 0.5px solid white; 
+.menu_botao{
+    background-color: #627082;
 }
