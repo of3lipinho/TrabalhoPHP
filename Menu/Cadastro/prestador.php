@@ -32,12 +32,12 @@
             
         </div>
     </div class="form_container">
-    <form action="Conexao/conexao_prestador.php" method="POST">
+    <form action="Conexao/inserir_prestador.php" method="POST">
         <p>Nome
         <input type="text" name="nome" id="nome" required />
         </p> 
         <p>Data de Nascimento
-        <input type="date" name="data_nasc" id="data_nasc" required />
+        <input type="date" name="datanasc" id="datanasc" required />
         </p>
         <p>Telefone
         <input type="text" name="telefone" id="telefone" required />
@@ -46,11 +46,12 @@
         <input type="email" name="email" id="email" required />
         </p>
         <p>CPF
-        <input type="text" name="CPF" id="CPF" required />
+        <input type="text" name="cpf" id="cpf" required />
         </p>
         <p>Especialidade
         <input type="text" name="especialidade" id="especialidade" required />
         </p>  
+        <input type="submit" value="Cadastrar" />
     </form>
     </div>
 </body>
