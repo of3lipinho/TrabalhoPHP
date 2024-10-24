@@ -16,10 +16,12 @@ try {
   VALUES ('$nome', '$datanasc', '$telefone','$email','$cpf','$especialidade')";
   // use exec() because no results are returned
   $conn->exec($sql);
-  echo "Salvou no Banco";
+  echo "Seu cadastro foi realizado com sucesso <br />";
+  echo "<input type='button' value='Voltar para a Página Inicial' onclick=\"window.location.href='/TrabalhoPHP/index.html'\" />";
 } catch(PDOException $e) {
   echo $sql . "<br>" . $e->getMessage();
 }
 
 $conn = null;
+
 ?>
