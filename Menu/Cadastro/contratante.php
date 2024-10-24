@@ -7,6 +7,30 @@
     <title>Cadastrar Contratante</title>
 </head>
 <body>
+<div class="cabecalho_container">
+        <p class="cabecalho">Autônomos Mococa</p>
+    </div>
+        <div class="menu_container">
+        <div class="menu">
+
+            <div class="menu_botao_borda">
+                <p><a href="/projeto/TrabalhoPHP/Menu/Cadastro/prestador.php">Prestadores de Serviço</a></p>
+            </div>
+
+            <div class="menu_botao_borda">
+                <p><a href="/projeto/TrabalhoPHP/Menu/Cadastro/contratante.php">Contratante</a></p>
+            </div>
+            
+            <div class="menu_botao_borda" >
+                <p><a href="/projeto/TrabalhoPHP/Menu/Consulta/prestador.php">Consultar Prestadores</a></p>
+            </div>  
+
+            <div class="menu_botao" >
+                <p><a href="/projeto/TrabalhoPHP/Menu/Consulta/contratante.php">Consultar Contratantes</a></p>
+            </div>
+            
+        </div>
+    </div>
     <form>
         <label for="nome">Nome:</label> 
         <input type="text" name="nome" id="nome">
