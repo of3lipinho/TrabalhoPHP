@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Estilos/prestador1.css">
+    <link rel="stylesheet" href="Estilos/prestador2.css">
+    <script src="formatacao.js"></script>
     <title>Cadastrar Prestador</title>
 
 </head>
@@ -45,13 +46,13 @@
             <input type="date" name="datanasc" id="datanasc" required />
         </p>
         <p>Telefone:
-            <input type="text" name="telefone" id="telefone" required />
+            <input type="text" name="telefone" id="telefone" maxlength="15" required oninput="formatarTelefone(this)" />
         </p>
         <p>Email:
             <input type="email" name="email" id="email" required />
         </p>
         <p>CPF:
-            <input type="text" name="cpf" id="cpf" required />
+            <input type="text" name="cpf" id="cpf" maxlength="14" minlength="14"   required oninput="formatarCPF(this)" />
         </p>
         <p>Especialidade:
             <input type="text" name="especialidade" id="especialidade" required />

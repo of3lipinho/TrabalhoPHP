@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Estilos/resultado_prestador.css">
+    <link rel="stylesheet" href="Estilos/resultado_prestador1.css">
     <title>Consulta de Prestadores</title>
 </head>
 <body>
@@ -50,6 +50,8 @@ $metodo = $_POST["metodo"];
 
 
 
+
+
 class TableRows extends RecursiveIteratorIterator {
   function __construct($it) {
     parent::__construct($it, self::LEAVES_ONLY);
@@ -92,6 +94,9 @@ try {
 }
 
 echo "</table>";
+echo "<Br />";
+echo "<input class='cadastrar' type='button' value='Voltar para a Pesquisa' onclick=\"window.location.href='pesquisa_prestador.php'\" />";
+
 echo "</div>";
 }
 
@@ -117,6 +122,8 @@ if($metodo==="especialidade"){
     
     $conn = null;
     echo "</table>";
+    echo "<input class='cadastrar' type='button' value='Voltar para a Pesquisa' onclick=\"window.location.href='pesquisa_prestador.php'\" />";
+
     echo "</div>";
     };
     if($metodo==="todos"){
@@ -140,10 +147,11 @@ if($metodo==="especialidade"){
       
       $conn = null;
       echo "</table>";
+      echo "<input class='cadastrar' type='button' value='Voltar para a Pesquisa' onclick=\"window.location.href='pesquisa_prestador.php'\" />";
+
       echo"</div>";
       };
       
 
-    echo "<input type='button' value='Voltar para a Pesquisa' onclick=\"window.location.href='pesquisa_prestador.php'\" />";
 
 ?>

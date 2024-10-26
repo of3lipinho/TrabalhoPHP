@@ -82,12 +82,16 @@ body {
 }
 
 
-.imagem_subcontainer{
-    border: black 1px solid;
+.imagem_subcontainer, .imagem_subcontainer_selecionavel{
+    border: rgb(94, 73, 134) 0px solid;
+    box-shadow: 3px 3px 50px  0px rgba(149, 144, 196, 0.75);
     height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50px;
     overflow: hidden;
+}
+.imagem_subcontainer_selecionavel:hover{
+    transform: scale(1.02);
 }

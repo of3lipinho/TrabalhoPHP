@@ -54,9 +54,29 @@ body {
 .menu a:hover {
     background-color: rgba(255, 255, 255, 0.144);
 }
-.tabela_container{
-   background-color: blue;
+.tabela_container {
+    
+    background-color: pink;
+    align-items: center;
+    margin: 30px auto; /* Altera o margin-top para margin auto para centralizar verticalmente */
+    padding: 10px;
+    width: 500px;
+    border-radius: 25px;
+            display: flex;
+        flex-direction: column; /* Alinha os itens verticalmente */
+    
+    /* Move para cima 50% da altura do próprio contêiner */
 }
 .tabela{
-    border-collapse: collapse;
+ background-color: wheat;
+}
+
+.cadastrar {
+    width: 250px; /* Ajuste o valor conforme necessário */
+    padding: 10px; /* Adiciona um pouco de espaço interno */
+    font-size: 16px;
+    border-radius: 15px;   
+    border: 2px black solid;
+    margin-top: 20px;
+    align-self: center;
 }

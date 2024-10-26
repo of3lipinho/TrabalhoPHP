@@ -78,17 +78,23 @@ form {
 }
 
 
-.form_container input[type="text"],
-.form_container input[type="date"],
-.form_container input[type="email"] {
+form input[type="text"],
+form input[type="date"],
+form input[type="email"] {
     width: 100%; /* Faz os inputs ocuparem 100% da largura do contêiner */
-    padding: 10px; /* Adiciona um pouco de preenchimento dentro dos inputs */
-    box-sizing: border-box; /* Inclui o preenchimento na largura total */
+    padding: 5px; /* Adiciona um pouco de preenchimento dentro dos inputs */
+    box-sizing: border-box; 
+    border-radius: 25px;
+    overflow: hidden;
 }
 .cadastrar {
     width: 250px; /* Ajuste o valor conforme necessário */
     padding: 10px; /* Adiciona um pouco de espaço interno */
     font-size: 16px;
-    border-radius: 15px;   
     border: 2px black solid;
+    border-radius: 30px;
+   
+}
+.form_container input:focus{
+    background-color: green;
 }
