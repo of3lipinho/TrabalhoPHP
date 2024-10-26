@@ -8,25 +8,28 @@
 </head>
 <body>
 <div class="cabecalho_container">
-        <p class="cabecalho">Autônomos Mococa</p>
+        <p class="cabecalho">Cadastro de Contratante</p>
     </div>
         <div class="menu_container">
         <div class="menu">
 
+        <div class="menu_botao_borda">
+                <p><a href="/TrabalhoPHP/index.html">Pagina Inicial </a></p>
+            </div>
             <div class="menu_botao_borda">
-                <p><a href="/projeto/TrabalhoPHP/Menu/Cadastro/prestador.php">Prestadores de Serviço</a></p>
+                <p><a href="/TrabalhoPHP/Menu/Cadastro/prestador.php">Prestadores de Serviço</a></p>
             </div>
 
             <div class="menu_botao_borda">
-                <p><a href="/projeto/TrabalhoPHP/Menu/Cadastro/contratante.php">Contratante</a></p>
+                <p><a href="/TrabalhoPHP/Menu/Cadastro/contratante.php">Contratante</a></p>
             </div>
             
             <div class="menu_botao_borda" >
-                <p><a href="/projeto/TrabalhoPHP/Menu/Consulta/prestador.php">Consultar Prestadores</a></p>
+                <p><a href="/TrabalhoPHP/Menu/Consulta/pesquisa_prestador.php">Consultar Prestadores</a></p>
             </div>  
 
             <div class="menu_botao" >
-                <p><a href="/projeto/TrabalhoPHP/Menu/Consulta/contratante.php">Consultar Contratantes</a></p>
+                <p><a href="/TrabalhoPHP/Menu/Consulta/pesquisa_contratante.php">Consultar Contratantes</a></p>
             </div>
             
         </div>

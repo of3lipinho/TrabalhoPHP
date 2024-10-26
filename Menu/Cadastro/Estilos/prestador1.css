@@ -1,50 +1,5 @@
-Arquivo para guardar informações importantes
 
-Largura da Pagina: 1536px
-Altura da Pagina Total: 679px
-Altura da Pagina onde há conteudo: 442px
-Tamanho maximoo das imagens para não ativar o scroll vertical: 237px 
-
-Cada imagem deve ter as seguintes Medidas:
-4 imagens: Heigth=237px / Width: 374px / Margin Left e Right=5px
-3 imagens: Heigth=237px / Width: 376.5px / Margin Left e Right=5px
-
-Linkar
-<link rel="stylesheet" href="Estilos/nomedoarquivo.css">
-<script src="Script/nomedoarquivo.js"></script>
-
-
-//MENU E CABEÇALHO HTML
-<div class="cabecalho_container">
-        <p class="cabecalho">Autônomos Mococa</p>
-    </div>
-    <div class="menu_container">
-        <div class="menu">
-
-            <div class="menu_botao_borda">
-                <p><a href="/TrabalhoPHP/index.html">Pagina Inicial </a></p>
-            </div>
-            <div class="menu_botao_borda">
-                <p><a href="/TrabalhoPHP/Menu/Cadastro/prestador.php">Prestadores de Serviço</a></p>
-            </div>
-
-            <div class="menu_botao_borda">
-                <p><a href="/TrabalhoPHP/Menu/Cadastro/contratante.php">Contratante</a></p>
-            </div>
-            
-            <div class="menu_botao_borda" >
-                <p><a href="/TrabalhoPHP/Menu/Consulta/pesquisa_prestador.php">Consultar Prestadores</a></p>
-            </div>  
-
-            <div class="menu_botao" >
-                <p><a href="/TrabalhoPHP/Menu/Consulta/pesquisa_contratante.php">Consultar Contratantes</a></p>
-            </div>
-            
-        </div>
-    </div>
-    //MENU E CABEÇALHO css
-
-   body {
+body {
     font-family: Arial, Helvetica, sans-serif; 
     margin: 0; 
     overflow-x: hidden; 
@@ -95,20 +50,9 @@ Linkar
  .menu_botao{
      background-color: #627082;
  }
-
-
 .menu a:hover {
     background-color: rgba(255, 255, 255, 0.144);
 }
-
-
-
-//FORMATAÇÃO PARA FORMULARIO
-
-CRIE UMA DIV COM A CLASS FORM_CONTAINER
-ESCREVA O CODIGO DO FORMULARIO DENTRO DELA, APÓS ISSO COLE ESSE CODIGO NO CSS DA Pagina
-
-
 form {
     background-color: beige;
     border: 1px solid black;
@@ -130,8 +74,9 @@ form {
 .form_container p {
     display: flex; /* Usar flexbox para alinhar os elementos */
     flex-direction: column; /* Coloca os elementos em coluna */
-    margin-bottom: 15px; /* Espaçamento entre os campos */
+    padding: 10px;
 }
+
 
 .form_container input[type="text"],
 .form_container input[type="date"],

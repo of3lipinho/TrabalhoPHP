@@ -1,5 +1,5 @@
 <?php
-include 'conexao_prestador.php';
+include 'conexao.php';
 $nome = $_POST['nome'];
 $datanasc = $_POST['datanasc'];
 $telefone = $_POST['telefone'];

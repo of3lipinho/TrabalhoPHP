@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, Helvetica, sans-serif; 
+    margin: 0; 
+    overflow-x: hidden; 
+    background-color: #d6d6d6; 
+}
+
+.cabecalho_container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: #454545; 
+    padding: 10px; 
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.cabecalho {
+    color: white; 
+    font-size: 25px; 
+    font-weight: bold; 
+}
+
+.menu_container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: #a6a6a6; 
+    height: 90px; 
+    box-sizing: border-box; 
+}
+
+.menu {
+    display: flex; 
+    justify-content: center; 
+    width: 100%; 
+}
+
+.menu a {
+    color: white; 
+    font-size: 18px; 
+    text-decoration: none; 
+    padding: 15px 30px; 
+}
+.menu_botao_borda{
+    background-color:  #627082;
+    border-right: white 1px solid;
+ }
+ .menu_botao{
+     background-color: #627082;
+ }
+
+
+.menu a:hover {
+    background-color: rgba(255, 255, 255, 0.144);
+}
+form {
+    background-color: beige;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow:  0 1px 50px rgba(32, 17, 36, 0.3); /* Sombra em volta do form */
+    padding: 20px;
+    margin: 20px auto; /* Margem automática nas laterais */
+    margin-top: 70px;
+    width: 350px; /* Defina uma largura fixa ou percentual */
+    display: flex; /* Se você estiver usando flexbox */
+    flex-direction: column; /* Para organizar os elementos dentro do form */
+}
+.form_container {
+    max-width: 400px; /* Define a largura máxima do formulário */
+    margin: 0 auto; /* Centraliza o formulário na página */
+}
+
+.form_container p {
+    display: flex; /* Usar flexbox para alinhar os elementos */
+    flex-direction: column; /* Coloca os elementos em coluna */
+    margin-bottom: 30px; /* Espaçamento entre os campos */
+}
+
+.form_container input[type="text"]{
+    width: 75%; /* Faz os inputs ocuparem 100% da largura do contêiner */
+    padding: 10px; /* Adiciona um pouco de preenchimento dentro dos inputs */
+    flex-direction: column;    
+}
+.buscar {
+    width: 250px; /* Ajuste o valor conforme necessário */
+    padding: 10px; /* Adiciona um pouco de espaço interno */
+    font-size: 16px;
+    border-radius: 15px;   
+    border: 2px black solid;
+}
+select  {
+    width: 80%; /* Faz os inputs ocuparem 100% da largura do contêiner */
+    padding: 10px; /* Adiciona um pouco de preenchimento dentro dos inputs */
+    flex-direction: column; 
+}

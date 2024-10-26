@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
-    <title>Página Inicial</title>
+    <link rel="stylesheet" href="Estilos/prestador2.css">
+    <title>Consultar Prestadores</title>
 </head>
 <body>
-    <div class="cabecalho_container">
-        <p class="cabecalho">Autônomos Mococa</p>
+<div class="cabecalho_container">
+        <p class="cabecalho">Pesquisa de Prestadores</p>
     </div>
     <div class="menu_container">
         <div class="menu">
 
-            <div class="menu_botao_borda">
+        <div class="menu_botao_borda">
                 <p><a href="/TrabalhoPHP/index.html">Pagina Inicial </a></p>
             </div>
+
             <div class="menu_botao_borda">
                 <p><a href="/TrabalhoPHP/Menu/Cadastro/prestador.php">Prestadores de Serviço</a></p>
             </div>
@@ -35,28 +35,21 @@
             
         </div>
     </div>
-    <div class="banner_container">
-        <img src="Img/banner.png" alt="Banner" class="banner">
+    <div class="form_container">
+    <form action="resultado_prestador.php" method="post">
+        <p>Selecione o metodo de filtro:
+            <select name="metodo" id="metodo">
+                <option value="-1" selected disabled>Selecione sua opção</option>
+                <option value="nome">Nome</option>
+                <option value="especialidade">Especialidade</option>
+                <option value="todos">Exibir Todos</option>
+            </select>
+        </p>
+        <p>Pesquisar:
+            <input type="text" id="filtro" name="filtro" placeholder="Ex. João da Silva, Pintor" />
+        </p>
+        <input type="submit" class="buscar" value="Buscar" />
+    </form>
     </div>
-    <div class="imagem_container">
-        <div class="imagem_subcontainer">
-            <img src="Img/Img1.png" alt="1" />
-        </div>
-        <a href="/projeto/TrabalhoPHP/Menu/Consulta/prestador.php">
-            <div class="imagem_subcontainer">
-                <img src="Img/Img2.png" alt="2" />
-            </div>
-        </a>
-
-        <a href="/projeto/TrabalhoPHP/Menu/Consulta/contratante.php">
-            <div class="imagem_subcontainer">
-                <img src="Img/Img3.png" alt="3" />
-            </div>
-        </a>
-        <div class="imagem_subcontainer">
-            <img src="Img/Img4.png" alt="4" />
-        </div>
-    </div>
-    
 </body>
 </html>
