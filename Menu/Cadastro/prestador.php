@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Estilos/prestador2.css">
-    <script src="formatacao.js"></script>
+    <link rel="stylesheet" href="Estilos/prestador3.css">
+    <script src="Script/formatacao.js"></script>
     <title>Cadastrar Prestador</title>
 
 </head>
@@ -60,6 +60,13 @@
         <input type="submit" value="Cadastrar" class="cadastrar" />
     </form>
     </div>
+
+    <div class="rodape_container">
+        <p class="rodape">Contato: contato@exemplo.com | Telefone: (11) 1234-5678 | Endereço: Rua Exemplo, 123 - Mococa, SP</p>
+        <p class="rodape">© 2024 Autonomos Já. Todos os direitos reservados.</p>
+    </div>
 </body>
+
+
 
 </html>

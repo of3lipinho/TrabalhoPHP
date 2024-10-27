@@ -147,3 +147,31 @@ form {
     border-radius: 15px;   
     border: 2px black solid;
 }
+
+//RODAPE
+<div class="rodape_container">
+        <p class="rodape">Contato: contato@exemplo.com | Telefone: (11) 1234-5678 | Endereço: Rua Exemplo, 123 - Mococa, SP</p>
+        <p class="rodape">© 2024 Autonomos Já. Todos os direitos reservados.</p>
+    </div>
+
+
+
+
+.rodape_container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: #454545; 
+    width: 100%; 
+    box-sizing: border-box; 
+    margin-top: 30px;
+    height: 60px;
+}
+
+.rodape {
+    color: white; 
+    font-size: 15px; 
+    font-weight: bold; 
+    padding: 10px;
+    font-style: italic;
+}
