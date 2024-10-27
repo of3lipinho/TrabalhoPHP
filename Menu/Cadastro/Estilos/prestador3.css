@@ -86,6 +86,7 @@ form input[type="email"] {
     box-sizing: border-box; 
     border-radius: 25px;
     overflow: hidden;
+    text-align: center;
 }
 .cadastrar {
     width: 250px; /* Ajuste o valor conforme necessário */
@@ -97,4 +98,23 @@ form input[type="email"] {
 }
 .form_container input:focus{
     background-color: green;
+}
+
+.rodape_container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: #454545; 
+    width: 100%; 
+    box-sizing: border-box; 
+    margin-top: 30px;
+    height: 60px;
+}
+
+.rodape {
+    color: white; 
+    font-size: 15px; 
+    font-weight: bold; 
+    padding: 10px;
+    font-style: italic;
 }

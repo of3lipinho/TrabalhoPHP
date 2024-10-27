@@ -57,5 +57,10 @@
         <input type="submit" value="contratante">
         
     </form>
+
+    <div class="rodape_container">
+        <p class="rodape">Contato: contato@exemplo.com | Telefone: (11) 1234-5678 | Endereço: Rua Exemplo, 123 - Mococa, SP</p>
+        <p class="rodape">© 2024 Autonomos Já. Todos os direitos reservados.</p>
+    </div>
 </body>
 </html>

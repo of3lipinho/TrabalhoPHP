@@ -54,44 +54,46 @@ body {
 .menu a:hover {
     background-color: rgba(255, 255, 255, 0.144);
 }
-
-.banner_container {
+.resultado{
+    background-color: beige;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow:  0 1px 50px rgba(32, 17, 36, 0.3); /* Sombra em volta do form */
+    padding: 20px;
+    margin: 20px auto; /* Margem automática nas laterais */
+    margin-top: 70px;
+    width: 350px; /* Defina uma largura fixa ou percentual */
+    display: flex; /* Se você estiver usando flexbox */
+    flex-direction: column; /* Para organizar os elementos dentro do form */
+    align-items: center; /* Centraliza os itens dentro do form */
+}
+.resultado p{
+    font-size: 18px;
+    padding: 15px;
+}
+.cadastrar {
+    width: 250px; /* Ajuste o valor conforme necessário */
+    padding: 10px; /* Adiciona um pouco de espaço interno */
+    font-size: 16px;
+    border: 2px black solid;
+    border-radius: 30px;
+   
+}
+.rodape_container {
     display: flex; 
     justify-content: center; 
     align-items: center; 
-    height: 250px; 
+    background-color: #454545; 
     width: 100%; 
-    overflow: hidden; 
-    margin: 0; 
+    box-sizing: border-box; 
+    margin-top: 30px;
+    height: 60px;
 }
 
-.banner {
-    max-width: 100%; 
-    height: auto; 
-}
-
-.imagem_container {
-    display: flex; /* Certifique-se de que o container é flexível */
-    justify-content: space-around; /* Distribui os itens com espaço igual entre eles */
-    margin: 20px 0; /* Adiciona um espaçamento superior e inferior */
-}
-
-.imagem_subcontainer img {
-    max-width: 100%; /* A largura máxima das imagens, ajustável conforme necessário */
-    height: 100%; /* Mantém a proporção das imagens */
-}
-
-
-.imagem_subcontainer, .imagem_subcontainer_selecionavel{
-    border: rgb(94, 73, 134) 0px solid;
-    box-shadow: 3px 3px 50px  0px rgba(149, 144, 196, 0.75);
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50px;
-    overflow: hidden;
-}
-.imagem_subcontainer_selecionavel:hover{
-    transform: scale(1.02);
+.rodape {
+    color: white; 
+    font-size: 15px; 
+    font-weight: bold; 
+    padding: 10px;
+    font-style: italic;
 }
