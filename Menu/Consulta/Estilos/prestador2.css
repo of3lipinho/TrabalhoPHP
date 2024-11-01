@@ -3,6 +3,7 @@ body {
     margin: 0; 
     overflow-x: hidden; 
     background-color: #d6d6d6; 
+    min-height: 100vh
 }
 
 .cabecalho_container {
@@ -93,4 +94,24 @@ select  {
     width: 80%; /* Faz os inputs ocuparem 100% da largura do contêiner */
     padding: 10px; /* Adiciona um pouco de preenchimento dentro dos inputs */
     flex-direction: column; 
+}
+.rodape_container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: #454545; 
+    width: 100%; 
+    box-sizing: border-box; 
+    height: 60px;
+    position:fixed;
+    padding: 1em;
+    position: relative; /* Para que fique fixo no final da página */
+}
+
+.rodape {
+    color: white; 
+    font-size: 15px; 
+    font-weight: bold; 
+    padding: 10px;
+    font-style: italic;
 }
