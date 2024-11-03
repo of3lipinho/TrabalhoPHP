@@ -22,7 +22,7 @@
             </div>
 
             <div class="menu_botao_borda">
-                <p><a href="/TrabalhoPHP/Menu/Cadastro/contratante.php">Contratante</a></p>
+                <p><a href="/TrabalhoPHP/Menu/Cadastro/contratante.php">Anunciar Vaga</a></p>
             </div>
             
             <div class="menu_botao_borda" >
@@ -30,7 +30,7 @@
             </div>  
 
             <div class="menu_botao" >
-                <p><a href="/TrabalhoPHP/Menu/Consulta/pesquisa_contratante.php">Consultar Contratantes</a></p>
+                <p><a href="/TrabalhoPHP/Menu/Consulta/pesquisa_contratante.php">Consultar Vaga</a></p>
             </div>
             
         </div>
