@@ -12,7 +12,7 @@
 
 <body>
 <div class="cabecalho_container">
-        <p class="cabecalho">Autônomos Mococa</p>
+        <p class="cabecalho">Cadastrar Prestador</p>
     </div>
     <div class="menu_container">
         <div class="menu">

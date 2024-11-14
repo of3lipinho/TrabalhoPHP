@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Estilos/contratante2.css">
-    <title>Cadastrar Contratante</title>
+    <title>Anunciar Vaga</title>
 </head>
 <body>
 <div class="cabecalho_container">
-        <p class="cabecalho">Autônomos Mococa</p>
+        <p class="cabecalho">Anunciar Vaga</p>
     </div>
     <div class="menu_container">
         <div class="menu">
