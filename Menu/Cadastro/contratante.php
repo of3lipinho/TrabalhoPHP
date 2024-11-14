@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Estilos/contratante.css">
+    <link rel="stylesheet" href="Estilos/contratante2.css">
     <title>Cadastrar Contratante</title>
 </head>
 <body>
@@ -36,7 +36,7 @@
     </div>
     </div class="form_container">
     <form action="Conexao/inserir_prestador.php" method="POST">
-        
+
     <p>Nome:
             <input type="text" name="nome" id="nome" required />
         </p>
@@ -56,8 +56,10 @@
             <input type="text" name="vaga" id="vaga" required />
         </p>
         <p>Descrição:
-        <input type="submit" value="descricao" class="descricao" />
+        <input type="text" name="descricao" />
         </p>
+
+        <input type="submit" value="Cadastrar" class="cadastrar" />
         
     </form>
     <div class="rodape_container">
