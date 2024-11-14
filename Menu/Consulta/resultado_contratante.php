@@ -71,10 +71,10 @@ if($metodo==="nome"){
 
 echo "<div class='tabela_container'>";
 echo "<table class='tabela' style='border: solid 1px black;'>";
-echo "<tr><th>Nome</th><th>Contato</th><th>Vaga</th></tr>";
+echo "<tr><th>Nome</th><th>Contato</th><th>Vaga</th><th>Descricao</th></tr>";
 
 try {
-    $stmt = $conn->prepare("SELECT nome, telefone, especialidade FROM vagas WHERE nome = :nome");
+    $stmt = $conn->prepare("SELECT nome, telefone, vagas, descricao FROM vagas WHERE nome = :nome");
     $stmt->bindParam(':nome', $filtro);
     // Execução do banco
     $stmt->execute();
@@ -95,14 +95,14 @@ echo "<input class='cadastrar' type='button' value='Voltar para a Pesquisa' oncl
 echo "</div>";
 }
 
-if($metodo==="especialidade"){
+if($metodo==="vagas"){
     echo "<div class='tabela_container'>";   
     echo "<table class='tabela' style='border: solid 1px black;'>";
     echo "<tr><th>Nome</th><th>Contato</th><th>Vaga</th></tr>";
     
     try {
-        $stmt = $conn->prepare("SELECT nome, telefone, especialidade FROM vagas WHERE vaga = :vaga");
-        $stmt->bindParam(':vagas', $filtro);
+        $stmt = $conn->prepare("SELECT nome, telefone, vaga, descricao FROM vagas WHERE vaga = :vaga");
+        $stmt->bindParam(':vaga', $filtro);
         // Execução do banco
         $stmt->execute();
       
@@ -124,10 +124,10 @@ if($metodo==="especialidade"){
     if($metodo==="todos"){
       echo "<div class='tabela_container'>";
       echo "<table class='tabela' style='border: solid 1px black;'>";
-      echo "<tr><th>Nome</th><th>Contato</th><th>Vaga</th></tr>";
+      echo "<tr><th>Nome</th><th>Contato</th><th>Vaga</th><th>Descricao</th></tr>";
       
       try {
-          $stmt = $conn->prepare("SELECT nome, telefone, especialidade FROM vagas");
+          $stmt = $conn->prepare("SELECT nome, telefone, vaga, descricao FROM vagas");
           // Execução do banco
           $stmt->execute();
         

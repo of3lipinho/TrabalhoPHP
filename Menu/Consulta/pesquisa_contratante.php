@@ -8,7 +8,7 @@
 </head>
 <body>
 <div class="cabecalho_container">
-        <p class="cabecalho">Consultar Prestadores</p>
+        <p class="cabecalho">Consultar Vaga</p>
     </div>
     <div class="menu_container">
         <div class="menu">
@@ -35,12 +35,12 @@
         </div>
     </div>
     <div class="form_container">
-    <form action="resultado_prestador.php" method="post">
+    <form action="resultado_contratante.php" method="post">
         <p>Selecione o metodo de filtro:
             <select name="metodo" id="metodo">
                 <option value="-1" selected disabled>Selecione sua opção</option>
                 <option value="nome">Nome</option>
-                <option value="especialidade">Vagas</option>
+                <option value="vagas">Vagas</option>
                 <option value="todos">Exibir Todos</option>
             </select>
         </p>
@@ -50,6 +50,7 @@
         <input type="submit" class="buscar" value="Buscar" />
     </form>
     </div>
+    <br><br><br><br><br><br>
 
     <footer class="rodape_container">
         <p class="rodape">Contato: contato@exemplo.com | Telefone: (11) 1234-5678 | Endereço: Rua Exemplo, 123 - Mococa, SP</p>

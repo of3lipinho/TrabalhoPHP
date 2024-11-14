@@ -35,13 +35,13 @@
         </div>
     </div>
     </div class="form_container">
-    <form action="Conexao/inserir_prestador.php" method="POST">
+    <form action="Conexao/inserir_contratante.php" method="POST">
 
     <p>Nome:
             <input type="text" name="nome" id="nome" required />
         </p>
         <p>Data de Nascimento:
-            <input type="date" name="datanasc" id="datanasc" required />
+            <input type="date" name="data_nasc" id="data_nasc" required />
         </p>
         <p>Telefone:
             <input type="text" name="telefone" id="telefone" maxlength="15" required oninput="formatarTelefone(this)" />
