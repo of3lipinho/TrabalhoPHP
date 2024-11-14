@@ -34,30 +34,36 @@
             
         </div>
     </div>
-    <form>
-        <label for="nome">Nome:</label> 
-        <input type="text" name="nome" id="nome">
-        <br>
-
-        <label for="data">Data de nascimento:</label>
-        <input type="text" name="data" id="data">
+    </div class="form_container">
+    <form action="Conexao/inserir_prestador.php" method="POST">
         
-        <br>
-
-        <label for="telefone">Telefone:</label> 
-        <input type="text" name="telefone" id="telefone">
-        <br>
-
-        <label for="cpf">CPF:</label>
-        <input type="text" name="cpf" id="cpf">
-        <br>
-
-        <label for="trabalho">Qual tipo de trabalho você procura?:</label>
-        <input type="text" name="trabalho" id="trabalho"> <br>
-        <input type="submit" value="contratante">
+    <p>Nome:
+            <input type="text" name="nome" id="nome" required />
+        </p>
+        <p>Data de Nascimento:
+            <input type="date" name="datanasc" id="datanasc" required />
+        </p>
+        <p>Telefone:
+            <input type="text" name="telefone" id="telefone" maxlength="15" required oninput="formatarTelefone(this)" />
+        </p>
+        <p>Email:
+            <input type="email" name="email" id="email" required />
+        </p>
+        <p>CPF:
+            <input type="text" name="cpf" id="cpf" maxlength="14" minlength="14"   required oninput="formatarCPF(this)" />
+        </p>
+        <p>Vaga:
+            <input type="text" name="vaga" id="vaga" required />
+        </p>
+        <p>Descrição:
+        <input type="submit" value="descricao" class="descricao" />
+        </p>
         
     </form>
-
+    <div class="rodape_container">
+        <p class="rodape">Contato: contato@exemplo.com | Telefone: (11) 1234-5678 | Endereço: Rua Exemplo, 123 - Mococa, SP</p>
+        <p class="rodape">© 2024 Autonomos Já. Todos os direitos reservados.</p>
+    </div>
    
 </body>
 </html>
