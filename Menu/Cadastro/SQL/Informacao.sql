@@ -73,4 +73,4 @@ VALUES
 (23, 'Rodrigo Gomes Administradora', '1985-07-03', '(21) 93456-7890', 'rodrigo.gomes@example.com', '222.555.888-00', 'Administrador', 'Gerenciar processos administrativos, coordenar equipes e elaborar estratégias para otimização de recursos.'),
 (24, 'Larissa Pereira', '1992-03-14', '(61) 98761-4320', 'larissa.pereira@example.com', '444.888.111-22', 'Médica', 'Prestar atendimentos médicos, diagnosticar doenças, prescrever tratamentos e acompanhar a recuperação dos pacientes.');
 
-SELECT * FROM VAGAS;
+
