@@ -41,7 +41,14 @@ include "\wamp64\www\TrabalhoPHP\Menu\Cadastro\Conexao\conexao.php";
 
 
 $filtro = $_POST["filtro"];
-$metodo = $_POST["metodo"];
+$metodo = $_POST["metodo"] ?? '';
+
+if(empty($metodo)){
+  echo "<div class='tabela_container'>";
+  echo "<p>Selecione um metodo de busca</p>";
+  echo "<input class='cadastrar' type='button' value='Voltar para a Pesquisa' onclick=\"window.location.href='pesquisa_prestador.php'\" />"; 
+  echo "</div>";
+}
 
 
 
@@ -67,33 +74,34 @@ class TableRows extends RecursiveIteratorIterator {
   }
 }
 
-if($metodo==="nome"){
+if ($metodo === "nome") {
+  echo "<div class='tabela_container'>";
+  echo "<table class='tabela' style='border: solid 1px black;'>";
+  echo "<tr><th>Nome</th><th>Contato</th><th>Especialidade</th></tr>";
 
-echo "<div class='tabela_container'>";
-echo "<table class='tabela' style='border: solid 1px black;'>";
-echo "<tr><th>Nome</th><th>Contato</th><th>Especialidade</th></tr>";
+  try {
+      $stmt = $conn->prepare("SELECT nome, telefone, especialidade FROM prestador WHERE nome LIKE :nome");
+      // Adicione os % para permitir busca parcial
+      $filtroParcial = "%" . $filtro . "%";
+      $stmt->bindParam(':nome', $filtroParcial);
+      $stmt->execute();
 
-try {
-    $stmt = $conn->prepare("SELECT nome, telefone, especialidade FROM prestador WHERE nome = :nome");
-    $stmt->bindParam(':nome', $filtro);
-    // Execução do banco
-    $stmt->execute();
-  
-    // Definir o resultado como array associativo
-    $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
-    foreach(new TableRows(new RecursiveArrayIterator($stmt->fetchAll())) as $k => $v) {
-      echo $v;
-    }
-} catch(PDOException $e) {
-    echo "Error: " . $e->getMessage();
+      // Exibir resultados
+      $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
+      foreach (new TableRows(new RecursiveArrayIterator($stmt->fetchAll())) as $k => $v) {
+          echo $v;
+      }
+  } catch (PDOException $e) {
+      echo "Error: " . $e->getMessage();
+  }
+
+  echo "</table>";
+  echo "<br />";
+  echo "<input class='cadastrar' type='button' value='Voltar para a Pesquisa' onclick=\"window.location.href='pesquisa_prestador.php'\" />";
+
+  echo "</div>";
 }
 
-echo "</table>";
-echo "<Br />";
-echo "<input class='cadastrar' type='button' value='Voltar para a Pesquisa' onclick=\"window.location.href='pesquisa_prestador.php'\" />";
-
-echo "</div>";
-}
 
 if($metodo==="especialidade"){
     echo "<div class='tabela_container'>";   

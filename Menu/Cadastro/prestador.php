@@ -40,23 +40,23 @@
     </div>
     </div class="form_container">
     <form action="Conexao/inserir_prestador.php" method="POST">
-        <p>Nome:
-            <input type="text" name="nome" id="nome" required />
+    <p>Nome:
+            <input type="text" name="nome" id="nome" title="Digite seu Nome"  required />
         </p>
         <p>Data de Nascimento:
-            <input type="date" name="datanasc" id="datanasc" required />
+            <input type="date" name="data_nasc" id="data_nasc" title="Digite sua Data de Nascimento " required />
         </p>
         <p>Telefone:
-            <input type="text" name="telefone" id="telefone" maxlength="15" required oninput="formatarTelefone(this)" />
+            <input type="text" name="telefone" id="telefone" title="Digite seu Telefone" maxlength="15" required oninput="formatarTelefone(this)" />
         </p>
         <p>Email:
-            <input type="email" name="email" id="email" required />
+            <input type="email" name="email" id="email" title="Digite seu Email" required />
         </p>
         <p>CPF:
-            <input type="text" name="cpf" id="cpf" maxlength="14" minlength="14"   required oninput="formatarCPF(this)" />
+            <input type="text" name="cpf" id="cpf" maxlength="14" minlength="14" title="Digite seu CPF" oninput="formatarCPF(this)" />
         </p>
         <p>Especialidade:
-            <input type="text" name="especialidade" id="especialidade" required />
+            <input type="text" name="especialidade" id="especialidade" title="Digite sua Especialidade" required />
         </p>
         <input type="submit" value="Cadastrar" class="cadastrar" />
     </form>

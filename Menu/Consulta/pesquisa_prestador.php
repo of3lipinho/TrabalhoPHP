@@ -36,8 +36,8 @@
     </div>
     <div class="form_container">
     <form action="resultado_prestador.php" method="post">
-        <p>Selecione o metodo de filtro:
-            <select name="metodo" id="metodo">
+        <p>Selecione o metodo de busca:
+            <select name="metodo" id="metodo" value='0'>
                 <option value="-1" selected disabled>Selecione sua opção</option>
                 <option value="nome">Nome</option>
                 <option value="especialidade">Especialidade</option>
@@ -50,7 +50,7 @@
         <input type="submit" class="buscar" value="Buscar" />
     </form>
     </div>
-        <br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br>
     <footer class="rodape_container">
         <p class="rodape">Contato: contato@exemplo.com | Telefone: (11) 1234-5678 | Endereço: Rua Exemplo, 123 - Mococa, SP</p>
         <p class="rodape">© 2024 Autonomos Já. Todos os direitos reservados.</p>

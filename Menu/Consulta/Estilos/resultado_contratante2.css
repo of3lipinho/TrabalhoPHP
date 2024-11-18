@@ -56,11 +56,11 @@ body {
 }
 .tabela_container {
     
-    background-color: pink;
+    background-color: #a9b4d1;
     align-items: center;
     margin: 30px auto; /* Altera o margin-top para margin auto para centralizar verticalmente */
     padding: 10px;
-    width: 1000px;
+    width: 1300px;
     border-radius: 25px;
     display: flex;
     flex-direction: column; /* Alinha os itens verticalmente */
@@ -72,6 +72,8 @@ body {
  background-color: wheat;
  width: 1000px;
  text-align: center;
+ box-shadow: rgba(121, 132, 139, 0.637) 2 3 5;  
+
 }
 
 .tabela tr,td{

@@ -36,7 +36,7 @@
     </div>
     <div class="form_container">
     <form action="resultado_contratante.php" method="post">
-        <p>Selecione o metodo de filtro:
+        <p>Selecione o metodo de busca:
             <select name="metodo" id="metodo">
                 <option value="-1" selected disabled>Selecione sua opção</option>
                 <option value="nome">Nome</option>
@@ -50,7 +50,7 @@
         <input type="submit" class="buscar" value="Buscar" />
     </form>
     </div>
-    <br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
 
     <footer class="rodape_container">
         <p class="rodape">Contato: contato@exemplo.com | Telefone: (11) 1234-5678 | Endereço: Rua Exemplo, 123 - Mococa, SP</p>

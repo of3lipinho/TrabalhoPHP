@@ -1,0 +1,39 @@
+Larissa
+
+
+Styles1.css
+Index.html
+
+Vai falar as paginas:
+Img/ Todas as imagens
+
+Menu/Cadastro:
+    -Contratante.php
+    -Prestador.php
+
+Menu/Cadastro/Estilos:
+    -Contratante2.css
+    -Inserir2.css
+    -Prestador3.css
+
+Menu/Consulta:  
+    -Pesquisa_contratante
+    -Pesquisa_prestador
+
+
+Felipe
+
+Menu/Cadastro/Conexao:
+    -conexao.php
+    -inserir_contratante.php
+    -inserir_prestador.php
+
+Menu/Cadastro/Script:
+    -Formatacao.js
+
+Menu/Cadastro/SQL
+    -Informacao.SQL
+
+Menu/Consulta
+    -Resultado_contratante.php
+    -Resultado_prestador.php
