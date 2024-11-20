@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Estilos/pesquisa.css">
+    <link rel="stylesheet" href="Estilos/pesquisa2.css">
     <title>Consultar Prestadores</title>
 </head>
 <body>
@@ -50,7 +50,7 @@
         <input type="submit" class="buscar" value="Buscar" />
     </form>
     </div>
-    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br>
 
     <footer class="rodape_container">
         <p class="rodape">Contato: contato@exemplo.com | Telefone: (11) 1234-5678 | Endereço: Rua Exemplo, 123 - Mococa, SP</p>

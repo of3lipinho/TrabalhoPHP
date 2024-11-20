@@ -70,6 +70,8 @@ form {
 .form_container {
     max-width: 400px; /* Define a largura máxima do formulário */
     margin: 0 auto; /* Centraliza o formulário na página */
+    margin-top: 100px;
+    margin-bottom: -32px;
 }
 
 .form_container p {
